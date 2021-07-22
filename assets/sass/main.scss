@@ -1,0 +1,25 @@
+// main.scss #Manifest file
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&family=Roboto:wght@300;400&display=swap');
+//Abstract
+@import 'abstract/variables';
+@import 'abstract/mixins';
+//Vendors
+//Base
+@import 'base/reset';
+@import 'base/typography';
+//Layout
+@import 'layout/navbar';
+@import 'layout/header';
+@import 'layout/article';
+@import 'layout/contact';
+@import 'layout/navigation';
+@import 'layout/footer';
+//Components
+@import 'components/links';
+@import 'components/buttons';
+@import 'components/thumbnails';
+@import 'components/pagination';
+//Pages
+@import 'pages/media_queries';
+//Themes
