@@ -1,0 +1,30 @@
+nav {
+    background-color: $platinum;
+    ul {
+        justify-content: center;
+        margin-bottom: 0rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+.page-link {
+    color: $eerie-black;
+}
+.page-item.active .page-link {
+    background-color: $nickel;
+    border-color: #DDDDDD;
+}
+.page-item a:hover {
+    color: $raisin-black;
+    background-color: $light-gray !important;
+    border: solid 1px $light-gray;
+
+}
+#left-button {
+    border-top-left-radius: 19px 19px;
+    border-bottom-left-radius: 19px 19px;
+}
+#right-button {
+    border-top-right-radius: 19px 19px;
+    border-bottom-right-radius: 19px 19px;
+}

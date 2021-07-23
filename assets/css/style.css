@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&family=Roboto:wght@300;400&display=swap");
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+  background-color: #E6E7E7;
+}
+nav ul {
+  justify-content: center;
+  margin-bottom: 0rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.page-link {
+  color: #121619;
+}
+
+.page-item.active .page-link {
+  background-color: #6C6E70;
+  border-color: #DDDDDD;
+}
+
+.page-item a:hover {
+  color: #222323;
+  background-color: #D1D1D1 !important;
+  border: solid 1px #D1D1D1;
+}
+
+#left-button {
+  border-top-left-radius: 19px 19px;
+  border-bottom-left-radius: 19px 19px;
+}
+
+#right-button {
+  border-top-right-radius: 19px 19px;
+  border-bottom-right-radius: 19px 19px;
+}
+
+.footer {
+  background-color: #121619;
+  text-align: center;
+  height: 206px;
+  padding-top: 77px;
+}
+.footer img {
+  width: 122px;
+}
+
+/*# sourceMappingURL=style.css.map */
