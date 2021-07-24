@@ -1,0 +1,21 @@
+.article {
+    margin-left: 6.25rem;
+    margin-right: 6.25rem;
+    margin-top: 4.6875rem;
+    margin-bottom: 4.6875rem;
+    &__date {
+        @include TF-Style ($playfair-display--ss, $regular, $large, 2.8125, 0.035em) {
+            color: $nickel;
+        }
+    }
+    &__content {
+        margin-top: 4.125rem;
+        margin-bottom: 4.75rem;
+        @include TF-Style ($roboto, $light, $medium, 2.8125, 0.035em) {
+            color: $raisin-black;
+        }
+    }
+    span {
+        color: $ruddy-pink;
+    }
+}

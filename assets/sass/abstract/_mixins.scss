@@ -1,5 +1,5 @@
 // Mixin/funcion para cambiar las propiedades de una fuente y su espaciado
-@mixin TF-Style($FontFamily, $Weight, $Size, $LineHeight, $LetterSpacing) {
+@mixin TF-Style ($FontFamily, $Weight, $Size, $LineHeight, $LetterSpacing) {
     font-family: $FontFamily; //tipo de fuente
     font-size: $Size;         //definicion del tamaño
     font-weight: $Weight;     //definicion del peso
