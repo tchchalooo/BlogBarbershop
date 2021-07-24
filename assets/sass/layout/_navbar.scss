@@ -1,0 +1,13 @@
+.navbar {
+    background-color: $eerie-black;
+    height: 96px;
+    padding-left: 6rem;
+    padding-right: 10rem;
+}
+.navbar-expand-md .navbar-nav .nav-link{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+.navbar-nav .nav-link.active {
+    color: $ruddy-pink;
+}
