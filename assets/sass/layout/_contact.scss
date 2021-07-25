@@ -1,10 +1,8 @@
 .contact{
     display: flex;
     justify-content: center;
-    padding-left: 6.25rem;
-    padding-right: 6.25rem;
-    padding-top: 3.625rem;
-    padding-bottom: 5.75rem;
+    padding-top: 3.813rem;
+    padding-bottom: 3.813rem;
     border: 1px solid $nickel;
     margin: 0rem;
     &__thumbnail {
@@ -13,14 +11,14 @@
         min-width: 131px;
         max-width: 177px;
         &-img{
-            border-radius: 100%;
+            border-radius: 50%;
         }
     }
     &__socialmedias {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 2.8125rem;
+        align-items: center;
         h3 {
             @include TF-Style ($playfair-display--s, $black, $x-large, normal, 0) {
                 font-style: italic;
@@ -45,6 +43,18 @@
         padding-left: 3rem;
         @include TF-Style ($roboto, $regular, 14px, 2.5, 0.035em) {
             color: $nickel;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .contact{
+        padding-left: 6.25rem;
+        padding-right: 6.25rem;
+        padding-top: 3.625rem;
+        padding-bottom: 5.75rem;
+        &__socialmedias {
+            padding-left: 2.8125rem;
+            align-items: flex-start;
         }
     }
 }

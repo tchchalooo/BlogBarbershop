@@ -1,39 +1,53 @@
 .btn-nickel {
-    color: #fff;
-    background-color: $nickel;
-    border-color: $nickel;
-    border-radius: 19px;
-    font-family: $roboto;
-    font-weight: $regular;
+  color: #fff;
+  background-color: $nickel;
+  border-color: $nickel;
+  font-family: $roboto;
+  font-weight: $regular;
+  font-size: 14px;
+  &--sm{
+    border-radius: 23px;
+    padding: 0.844rem 1.5rem;
+  }
+  &--md{
+    border-radius: 23px;
+    padding: 0.844rem 0.875rem;
+  }
+}
+.btn-nickel:hover {
+  color: #fff;
+  background-color: $light-gray;
+  border-color: $light-gray;
+}
+.btn-check:focus + .btn-nickel, .btn-nickel:focus {
+  color: #fff;
+  background-color: $nickel;
+  border-color: $light-gray;
+  box-shadow: 0 0 0 0.25rem $light-gray;
+}
+.btn-check:checked + .btn-nickel, .btn-check:active + .btn-nickel, .btn-nickel:active, .btn-nickel.active, .show > .btn-nickel.dropdown-toggle {
+  color: #fff;
+  background-color: $light-gray;
+  border-color: $light-gray;
+}
+.btn-check:checked + .btn-nickel:focus, .btn-check:active + .btn-nickel:focus, .btn-nickel:active:focus, .btn-nickel.active:focus, .show > .btn-nickel.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem $light-gray;
+}
+//.btn-nickel:disabled, .btn-nickel.disabled {
+//  color: #fff;
+//  background-color: $nickel;
+//  border-color: $nickel;
+//}
+@media (min-width: 768px) {
+  .btn-nickel {
     font-size: $medium;
     &--sm{
-        padding: 0.375rem 1.25rem;
+      border-radius: 25px;
+      padding: 1rem 1.25rem;
     }
     &--md{
-        padding: 0.375rem 0.875rem;
+      border-radius: 25px;
+      padding: 1rem 0.875rem;
     }
   }
-  .btn-nickel:hover {
-    color: #fff;
-    background-color: $light-gray;
-    border-color: $light-gray;
-  }
-  .btn-check:focus + .btn-nickel, .btn-nickel:focus {
-    color: #fff;
-    background-color: $nickel;
-    border-color: $light-gray;
-    box-shadow: 0 0 0 0.25rem $light-gray;
-  }
-  .btn-check:checked + .btn-nickel, .btn-check:active + .btn-nickel, .btn-nickel:active, .btn-nickel.active, .show > .btn-nickel.dropdown-toggle {
-    color: #fff;
-    background-color: $light-gray;
-    border-color: $light-gray;
-  }
-  .btn-check:checked + .btn-nickel:focus, .btn-check:active + .btn-nickel:focus, .btn-nickel:active:focus, .btn-nickel.active:focus, .show > .btn-nickel.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.25rem $light-gray;
-  }
-  //.btn-nickel:disabled, .btn-nickel.disabled {
-  //  color: #fff;
-  //  background-color: $nickel;
-  //  border-color: $nickel;
-  //}
+}

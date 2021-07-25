@@ -10,16 +10,16 @@
     align-items: center;
     &__h1 {
         margin-top: auto;
-        @include TF-Style ($playfair-display--s, $black, $xx-large, 1.34285, 0) {
+        text-align: center;
+        @include TF-Style ($playfair-display--s, $black, 40px, 1.325, 0) {
             font-style: italic;
             color: $white;
+            width: 76.08695vw;
         }
-        width: 661px;
     }
-    
     &__a {
         margin-top: auto;
-        padding-bottom: 4.4375rem;
+        padding-bottom: 3.163rem;
         // unvisited link
         &:link {
             color: $white;
@@ -35,6 +35,22 @@
         // selected link
         &:active {
             color: $nickel;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .main-title {
+        &__h1 {
+            margin-top: auto;
+            text-align: center;
+            @include TF-Style ($playfair-display--s, $black, $xx-large, 1.34285, 0) {
+                font-style: italic;
+                color: $white;
+            }
+            width: 51.4vw;
+        }
+        &__a {
+            padding-bottom: 4.4375rem;
         }
     }
 }
