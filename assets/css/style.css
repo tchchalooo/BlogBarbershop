@@ -90,6 +90,67 @@ img {
   color: #D76C69;
 }
 
+.contact {
+  display: flex;
+  justify-content: center;
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
+  padding-top: 3.625rem;
+  padding-bottom: 5.75rem;
+  border: 1px solid #6C6E70;
+  margin: 0rem;
+}
+.contact__thumbnail {
+  display: flex;
+  justify-self: center;
+  min-width: 131px;
+  max-width: 177px;
+}
+.contact__thumbnail-img {
+  border-radius: 100%;
+}
+.contact__socialmedias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2.8125rem;
+}
+.contact__socialmedias h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0;
+  font-style: italic;
+  color: #121619;
+}
+.contact__socialmedias a {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0;
+}
+.contact__socialmedias-links--instagram {
+  margin-top: 0.375rem;
+  margin-left: 0.1875rem;
+  margin-bottom: 0.1875rem;
+}
+.contact__socialmedias-links--web {
+  margin-left: 0.375rem;
+}
+.contact__aboutus {
+  display: flex;
+  align-self: center;
+  padding-left: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.5;
+  letter-spacing: 0.035em;
+  color: #6C6E70;
+}
+
 nav {
   background-color: #E6E7E7;
 }
@@ -147,6 +208,47 @@ nav ul {
 
 .btn-check:checked + .btn-nickel:focus, .btn-check:active + .btn-nickel:focus, .btn-nickel:active:focus, .btn-nickel.active:focus, .show > .btn-nickel.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem #D1D1D1;
+}
+
+a.contact__socialmedias-links--primary {
+  text-decoration: none;
+  color: #D76C69;
+}
+a.contact__socialmedias-links--primary:hover {
+  color: #222323;
+}
+a.contact__socialmedias-links--primary:active {
+  color: #E6E7E7;
+}
+a.contact__socialmedias-links--secondary {
+  text-decoration: none;
+  color: #222323;
+}
+a.contact__socialmedias-links--secondary:hover {
+  color: #D1D1D1;
+}
+a.contact__socialmedias-links--secondary:active {
+  color: #6C6E70;
+}
+a.contact__socialmedias-links--light {
+  text-decoration: none;
+  color: #D1D1D1;
+}
+a.contact__socialmedias-links--light:hover {
+  color: #6C6E70;
+}
+a.contact__socialmedias-links--light:active {
+  color: #E6E7E7;
+}
+a.contact__socialmedias-links--dark {
+  text-decoration: none;
+  color: #121619;
+}
+a.contact__socialmedias-links--dark:hover {
+  color: #222323;
+}
+a.contact__socialmedias-links--dark:active {
+  color: #6C6E70;
 }
 
 .page-link {

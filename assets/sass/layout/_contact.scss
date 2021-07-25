@@ -1,0 +1,50 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+    padding-top: 3.625rem;
+    padding-bottom: 5.75rem;
+    border: 1px solid $nickel;
+    margin: 0rem;
+    &__thumbnail {
+        display: flex;
+        justify-self: center;
+        min-width: 131px;
+        max-width: 177px;
+        &-img{
+            border-radius: 100%;
+        }
+    }
+    &__socialmedias {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 2.8125rem;
+        h3 {
+            @include TF-Style ($playfair-display--s, $black, $x-large, normal, 0) {
+                font-style: italic;
+                color: $eerie-black;
+            }
+        }
+        a {
+            @include TF-Style ($roboto, $light, 20px, normal, 0)
+        }
+        &-links--instagram {
+            margin-top: 0.375rem;
+            margin-left: 0.1875rem;
+            margin-bottom: 0.1875rem;
+        }
+        &-links--web {
+            margin-left: 0.375rem;
+        }
+    }
+    &__aboutus {
+        display: flex;
+        align-self: center;
+        padding-left: 3rem;
+        @include TF-Style ($roboto, $regular, 14px, 2.5, 0.035em) {
+            color: $nickel;
+        }
+    }
+}

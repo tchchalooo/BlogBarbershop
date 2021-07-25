@@ -1,0 +1,42 @@
+a.contact__socialmedias-links{
+    &--primary {
+        text-decoration: none;
+        color: $ruddy-pink;
+        &:hover {
+            color: $raisin-black;
+        }
+        &:active {
+            color: $platinum;
+        }
+    }
+    &--secondary {
+        text-decoration: none;
+        color: $raisin-black;
+        &:hover {
+            color: $light-gray;
+        }
+        &:active {
+            color: $nickel;
+        }
+    }
+    &--light {
+        text-decoration: none;
+        color: $light-gray;
+        &:hover {
+            color: $nickel;
+        }
+        &:active {
+            color: $platinum;
+        }
+    }
+    &--dark {
+        text-decoration: none;
+        color: $eerie-black;
+        &:hover {
+            color: $raisin-black;
+        }
+        &:active {
+            color: $nickel;
+        }
+    }
+}
